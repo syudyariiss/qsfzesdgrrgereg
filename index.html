@@ -1,0 +1,13 @@
+<script type="text/javascript">
+    // Extract tracking parameter from the URL
+    var tracking_param = window.location.href.split('#')[1];
+    var srv = "adsolary.com";
+
+    // Check if the tracking parameter exists
+    if (!tracking_param) {
+        alert("Please set tracking parameters!");
+    } else {
+        // Redirect to the new URL
+        document.location.href = 'http://' + srv + '/' + tracking_param;
+    }
+</script>
